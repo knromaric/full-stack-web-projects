@@ -93,6 +93,7 @@
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\MenusController.cs" />
+    <Compile Include="Controllers\ReservationsController.cs" />
     <Compile Include="Data\CoffeeRoomDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>

@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-
-namespace CoffeeRoomApi.Models
+﻿namespace CoffeeRoomApi.Models
 {
     public class SubMenu
     {
