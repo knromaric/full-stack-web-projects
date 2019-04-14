@@ -92,10 +92,20 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Controllers\FlightAndHotelsController.cs" />
     <Compile Include="Data\FlightAndHotelDbContext.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201904130611299_initialMigration.cs" />
+    <Compile Include="Migrations\201904130611299_initialMigration.Designer.cs">
+      <DependentUpon>201904130611299_initialMigration.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201904131119389_ChangePropertyTypeToString.cs" />
+    <Compile Include="Migrations\201904131119389_ChangePropertyTypeToString.Designer.cs">
+      <DependentUpon>201904131119389_ChangePropertyTypeToString.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\FlightAndHotel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -110,7 +120,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201904130611299_initialMigration.resx">
+      <DependentUpon>201904130611299_initialMigration.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201904131119389_ChangePropertyTypeToString.resx">
+      <DependentUpon>201904131119389_ChangePropertyTypeToString.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
